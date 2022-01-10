@@ -59,14 +59,10 @@ class Agent:
     self.env.close()
     return reward
 
-  def train(self, episodes=150, eps_max=0.9, eps_min=0.1, decay_scale=1, gamma=0.999, batch_size=256):
+  def train(self, episodes=150, eps=0.9, decay=0.99, gamma=0.999, batch_size=256):
     rewards = []
     # store reward from each episode in a text file
     f = open(self.loc + "/" + self.env_name + "_rewards.txt", "w")
-    # decay
-    assert eps_min <= eps_max
-    decay = decay_scale * (eps_max - eps_min) / episodes
-    eps = eps_max
 
     for i in tqdm.tqdm(range(episodes)):
       done = False
@@ -119,7 +115,7 @@ class Agent:
       # store episode reward in the text file
       rewards.append(self.play(render=False))
       f.write(f"{rewards[-1]}\n")
-      eps -= decay  # decay epsilon
+      eps *= decay  # decay epsilon
 
     self.env.close()
     return rewards
