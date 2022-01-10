@@ -1,0 +1,38 @@
+ale-py==0.7.3
+AutoROM==0.4.2
+AutoROM.accept-rom-license==0.4.2
+certifi==2021.10.8
+cffi @ file:///Users/runner/miniforge3/conda-bld/cffi_1636046166270/work
+charset-normalizer==2.0.10
+click==8.0.3
+cloudpickle==1.6.0
+colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1602866480661/work
+cycler @ file:///home/conda/feedstock_root/build_artifacts/cycler_1635519461629/work
+fonttools @ file:///Users/runner/miniforge3/conda-bld/fonttools_1639926335016/work
+future @ file:///Users/runner/miniforge3/conda-bld/future_1635819654955/work
+gym==0.21.0
+idna==3.3
+importlib-metadata==4.10.0
+importlib-resources==5.4.0
+kiwisolver @ file:///Users/runner/miniforge3/conda-bld/kiwisolver_1635837079485/work
+matplotlib @ file:///Users/runner/miniforge3/conda-bld/matplotlib-suite_1639359034653/work
+munkres==1.1.4
+numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1641177068607/work
+olefile @ file:///home/conda/feedstock_root/build_artifacts/olefile_1602866521163/work
+opencv-python==4.5.5.62
+packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1637239678211/work
+Pillow @ file:///Users/runner/miniforge3/conda-bld/pillow_1636559170621/work
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1636257122734/work
+pyglet @ file:///Users/runner/miniforge3/conda-bld/pyglet_1641370641967/work
+pyparsing @ file:///home/conda/feedstock_root/build_artifacts/pyparsing_1636757021002/work
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1626286286081/work
+requests==2.27.1
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+torch @ file:///Users/runner/miniforge3/conda-bld/pytorch-recipe_1635217280611/work
+torchvision @ file:///Users/runner/miniforge3/conda-bld/torchvision-split_1632782791440/work
+tornado @ file:///Users/runner/miniforge3/conda-bld/tornado_1635819723809/work
+tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1632160078689/work
+typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1638334978229/work
+unicodedata2 @ file:///Users/runner/miniforge3/conda-bld/unicodedata2_1640031423081/work
+urllib3==1.26.8
+zipp==3.7.0
