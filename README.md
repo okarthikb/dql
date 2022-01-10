@@ -1,6 +1,6 @@
 # dql
 
-`dql.py` is an implementation of DeepMind's DQL algorithm given in this ![paper](https://arxiv.org/abs/1312.5602). 
+`dql.py` is an implementation of DeepMind's DQL algorithm given in this [paper](https://arxiv.org/abs/1312.5602). 
 
 ![](dql.png)
 
