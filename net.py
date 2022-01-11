@@ -1,13 +1,17 @@
 from dql import *
 
 
+# init environment from gym
+env = gym.make("CartPole-v0")
+
+
 # define the Q network
 class DQN(torch.nn.Module):
   def __init__(self):
     super(DQN, self).__init__()
     # define layers
     self.fc = torch.nn.Linear(4, 256)
-    self.out = torch.nn.Linear(256, 2)
+    self.out = torch.nn.Linear(256, env.action_space.n)
     # define optimizer
     self.opt = torch.optim.Adam(self.parameters(), lr=1e-3)
 
@@ -22,9 +26,6 @@ class DQN(torch.nn.Module):
 def phi(seq):
   return torch.tensor(seq[0], dtype=torch.float)
 
-
-# init environment from gym
-env = gym.make("CartPole-v0")
 
 # init Q net
 net = DQN().to(torch.device("cpu"))
